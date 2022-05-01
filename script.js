@@ -35,7 +35,7 @@ function loadMore(){
 }
 
 function fetchGifs(endpoint, query){
-  const apiKey = 'oCaukQ8WHEMu6Mc9Iu2gmQWIUDQTBfWK'
+  const apiKey = "oCaukQ8WHEMu6Mc9Iu2gmQWIUDQTBfWK"
   console.log(`query -> https://api.giphy.com/v1/gifs/${endpoint}?api_key=${apiKey}&limit=${limit}&${query}`)
   fetch(`https://api.giphy.com/v1/gifs/${endpoint}?api_key=${apiKey}&limit=${limit}&${query}`)
   .then(response => response.json())
